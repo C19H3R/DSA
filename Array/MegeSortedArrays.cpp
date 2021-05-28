@@ -42,7 +42,7 @@ int main(int argc, char const *argv[])
         cout<<endl;
 
         if(j<n2){
-            for ( j = 0; j+gap < n2; i++)
+            for ( j = 0; j+gap < n2; j++)
             {
                 if(arr2[j]>arr2[j+gap])
                     swap(arr2[j],arr2[j+gap]);
