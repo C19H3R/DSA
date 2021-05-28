@@ -9,17 +9,9 @@ int main(int argc, char const *argv[])
     int jumps=0;
    for (int i = 0; i < n; i++)
    {
-    cin>>arr[i]; 
+    cin>>arr[i];
    }
 
-   int index=0;
-   while (index<n-1)
-   {
-       int val=arr[index];
-       index+=val;
-       
-       jumps++;
-   }
    
    
    cout<<jumps;
