@@ -12,12 +12,27 @@ int main(int argc, char const *argv[])
     {
         cin >> arr[i];
     }
-    int a=0;
-    b=0;
-    for (int i = 1; i < n; i++)
-    {
-        
-    }
+    
+  int start=0;
+  int end=n-1;
+
+  for (int i = 0; i <=end; )
+  {
+      if(arr[i]<a){
+          swap(arr[i],arr[end++]);
+      }
+      else if (arr[i]>b)
+      {
+          swap(arr[i],arr[end--]);
+      }
+      else
+      {
+          i++;
+      }
+      
+      
+  }
+  
     
 
 
