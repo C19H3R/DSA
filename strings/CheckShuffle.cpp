@@ -54,11 +54,6 @@ bool CheckShuffle(string input,string first,string second){
             return false;
         }
             return true;
-        
-
-
-        
-        
     }
 
 }
