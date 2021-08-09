@@ -1,0 +1,28 @@
+Time Complexity
+    Time taken (no of oprations done) by the algo to run for a given input n
+
+    F(input length ) => time taken 
+
+
+Graphs > operations (prop. to ) length of input
+
+
+Big O       > upper bound               [Worst Case]
+Big Theta   > range(so it is average)   [Avg Case]
+Big Omega   > lower bound               [Best Case]
+
+STEP >>
+
+1)INPUTS : take a note of INPUTS
+
+
+
+
+NOTE :  Number of times, you can double a number till it is less than n would be log(n). 
+
+*For RECURSIVE;
+> Tree Meathod
+
+ 
+
+
