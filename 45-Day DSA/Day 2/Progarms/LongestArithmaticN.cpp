@@ -25,7 +25,7 @@ int main(int argc, char const *argv[])
             currentLength++;
         }else{
             maxLength=max(currentLength,maxLength);
-            currentLength=1;
+            currentLength=2;
             pDifference=arr[i]-arr[i+1];
         }
     }
