@@ -16,6 +16,7 @@ int ArithmaticSubarrayLength(int arr[],int start,int end){
     // cout << "arr[start] "<<arr[start];
 
     //cout <<"difference "<<difference << " "<<start << " "<< end << "start arr"<<arr[start]<<"start arr +1 "<< arr[start+1]<<endl;
+
     for (int i = start; i < end; i++)
     {
         if(difference!=(arr[i]-arr[i+1])){
