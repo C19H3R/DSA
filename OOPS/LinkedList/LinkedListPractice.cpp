@@ -344,7 +344,26 @@ class List{
         List newList(dummyNode->next);
         return newList;
     }
-    List 
+   void EvenAfterOdd(){
+       Node* odd=head;
+       Node* even =head->next;
+       Node* evenStart=even;
+
+       while (odd->next!=NULL&&even->next!=NULL)
+       {
+           odd->next=even->next;
+           odd=odd->next;
+           even->next=odd->next;
+           even=even->next;
+       }
+
+    //  if(odd->next!=NULL)
+    //     even->next=NULL;
+       odd->next=evenStart;
+
+       
+       
+   }
 };
 
 int main(int argc, char const *argv[])
@@ -395,18 +414,22 @@ int main(int argc, char const *argv[])
     // secondList.Display();
     // cout <<thirdList.FindInterSection(secondList);
     // cout << thirdList.Length();
-    List list1(2);
+    List list1(1);
+    list1.Push_Back(2);
+    list1.Push_Back(3);
+    list1.Push_Back(4);
     list1.Push_Back(5);
-    list1.Push_Back(11);
-    list1.Push_Back(15);
-    list1.Push_Back(18);
-    List list2(1);
-    list2.Push_Back(6);
-    list2.Push_Back(13);
-    list2.Push_Back(17);
-    list2.Push_Back(28);
-    List list3(1);
-    list3= list1.MergeSorted(list1,list2);
-    list3.Display();
+    list1.Display();
+    list1.EvenAfterOdd();
+    list1.Display();
+
+    // List list2(1);
+    // list2.Push_Back(6);
+    // list2.Push_Back(13);
+    // list2.Push_Back(17);
+    // list2.Push_Back(28);
+    // List list3(1);
+    // list3= list1.MergeSorted(list1,list2);
+    // list3.Display();
     return 0;
 }
