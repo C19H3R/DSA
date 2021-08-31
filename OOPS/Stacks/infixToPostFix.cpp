@@ -56,6 +56,7 @@ string inToPost(string infix ) {
 }
 
 int main() {
-   string infix = "x^y/(5*z)+2";
+   //string infix = "x^y/(5*z)+2";//
+   string infix="x*y+z";
    cout << "Postfix Form Is: " << inToPost(infix) << endl;
 }

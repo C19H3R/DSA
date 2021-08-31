@@ -23,6 +23,20 @@ int main(int argc, char const *argv[])
     stack<int> st;
 
     //for leftsmall arr()
+    for (int i = 0; i < count; i++)
+ 
+    {
+        if(!st.empty()&&arr[st.top>=arr[i]]){
+            st.pop();
+        }
+        if(st.empty()){
+            LeftArr[i]=0;            
+        }
+        else{
+            LeftArr[i]=st.top()+1;
+        }
+    }
+    
 
     for (int i = n-1; i >=0 ; i--)
     {
@@ -31,10 +45,10 @@ int main(int argc, char const *argv[])
         }
 
         if(st.empty())
-            LeftArr[i]=n;
+            LeftArr[i]=n-1;
         else
         {
-            LeftArr[i]=st.top();
+            LeftArr[i]=st.top()-1;
         }
         st.push(i);
     }
