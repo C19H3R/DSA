@@ -8,6 +8,8 @@ void insertAtBottom(stack<int> &st,int ele){
         st.push(ele);
         return;
     }
+    cout << "at bottom ";
+
     int topele=st.top();
     st.pop();
     insertAtBottom(st,ele);
@@ -21,6 +23,7 @@ void reverse(stack<int> &st){
     int ele=st.top();
     st.pop();
     reverse(st);
+    cout << "reverse ";
     insertAtBottom(st,ele);
 } 
 

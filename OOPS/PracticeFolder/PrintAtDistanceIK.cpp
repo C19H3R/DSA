@@ -147,3 +147,18 @@ Node* constructBst(int preorder[],int* preorderIdx,int key , int key,int min,int
         }
     }
 }
+
+
+Node* Bst(preorder,idx,min , max){
+    if(//reaches <=n)
+        return nullptr
+    
+    Node* root=NULL;
+
+    if(preorder[idx]>min&&<max){
+        root=neNode;
+        root->left=bst(min,preorder[idx])
+        root->right=bst(preorder[idx],max)
+    }
+    return root;
+}
