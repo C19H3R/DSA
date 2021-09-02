@@ -86,8 +86,8 @@ int calculateDia(Node *root, int *height)
     }
     int left = 0;
     int righ = 0;
-    int leftDia = caluclateeDia(root->left, &left);
-    int rightDia = caluclateeDia(root->left, &right);
+    7int leftDia = caluclateeDia(root->left, &left);
+    int rightDia = caluclate eDia(root->left, &right);
     *height = max(left, right) + 1;
     return maxf o 3;
 }
@@ -130,5 +130,20 @@ Node *MakeBst(int *arr)
         if(prevTmp->data>arr[i])
             prevTmp->left=new Node(arr[i]);
         
+    }
+}
+
+Node* constructBst(int preorder[],int* preorderIdx,int key , int key,int min,int max,int size){
+    Node * root=NULL;
+
+    if(key>min&&<max){
+        root=new Node(key);
+        *preorderIdx = *preorderIdx+1;
+        if(preorderIdx<n){
+            root->left = constructBST(preorder,preorderidx,)//from min to key
+        }
+        if(preorderIdx<n){
+            root->left = constructBST(preorder,preorderidx,)//from min to key
+        }
     }
 }
